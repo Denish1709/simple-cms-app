@@ -44,6 +44,17 @@ class Post
     }
 
     /**
+     * Update post details
+     */
+    public static function update( $title, $status)
+    {
+        $params = [
+            'title' => $title,
+            'status' => $status
+        ];
+    }
+
+    /**
      * Delete post
      */
     public static function delete( $post_id )
